@@ -1,5 +1,11 @@
 # jest-emotion
 
+## 11.0.0-next.4
+
+### Major Changes
+
+- [`702f3fd2`](https://github.com/emotion-js/emotion/commit/702f3fd22aab8f3cb09dd547c07b9045ca5c3d9c) [#1600](https://github.com/emotion-js/emotion/pull/1600) Thanks [@spudly](https://github.com/spudly)! - Added the `T` parameter to the `Matchers` interface in the TypeScript definitions to make this module compatible with `@types/jest@^24.0.20`.
+
 ## 11.0.0-next.3
 
 ### Patch Changes
