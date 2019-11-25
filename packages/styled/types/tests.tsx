@@ -86,3 +86,16 @@ const StyledOriginal = styled(Original, {
 
 // No more type conflict error
 ;<StyledOriginal prop1="1" prop2={2} />
+
+const Label = styled.label({})
+const Input = styled.input`
+  & + ${Label} {
+    margin-left: 3px;
+  }
+`
+// Correctly infers the element type
+;<Input
+  onChange={(evt: React.ChangeEvent<HTMLInputElement>) =>
+    console.log(evt.target.value)
+  }
+/>
